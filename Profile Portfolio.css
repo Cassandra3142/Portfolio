@@ -18,6 +18,21 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -45,4 +60,36 @@ p {
   font-weight: var(--weight-regular);
   color: black;
   margin: 4px 0px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2e64fe;
+  align-items: center;
+  color: white;
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0px 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid white;
+}
+.navbar__menu__item:hover {
+  background-color: darkblue;
 }
